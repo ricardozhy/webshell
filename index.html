@@ -25,5 +25,16 @@
     <iframe id="iframeLeft" name="iframeLeft" frameborder="0" src="https://mblog.ricardoz.site/category/Linux/"></iframe>
     <iframe id="iframeContent" name="iframeContent" frameborder="0" src="https://iaas.cloud.tencent.com/cloudshell"></iframe>
 </div>
+ <script>
+function setCookie(cookieString, canCrossSite) {
+    document.cookie = `${cookieString}`;
+    if(canCrossSite) {
+        document.cookie = `${cookieString}; SameSite=None; Secure`;
+    }
+}
+
+//设置samesite属性
+setCookie("samesite=None", true);
+
 </body>
 </html>
